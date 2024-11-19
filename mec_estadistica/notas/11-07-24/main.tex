@@ -1,0 +1,102 @@
+\documentclass{article}
+
+\usepackage[most]{tcolorbox}
+\usepackage{physics}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper, margin=1in]{geometry} % Controla los márgenes
+\usepackage{titling}
+
+\title{Clase Mecanica Estadistica }
+\author{Manuel Garcia.}
+\date{\today}
+
+\renewcommand{\maketitlehooka}{%
+  \centering
+  \vspace*{0.05cm} % Espacio vertical antes del título
+}
+
+\renewcommand{\maketitlehookd}{%
+  \vspace*{2cm} % Espacio vertical después de la fecha
+}
+
+\newcommand{\caja}[3]{%
+  \begin{tcolorbox}[colback=#1!5!white,colframe=#1!25!black,title=#2]
+    #3
+  \end{tcolorbox}%
+}
+
+\begin{document}
+\maketitle
+
+\section{Ejemplo}
+Particula libre de masa $ M  $ en el intervalo $ 0<q<1  $ dado que en $ q = 0  $ y $ q = 1  $ hay paredes que ocasionan que la particula rebote (coloicion elastica). 
+
+Luego $ V(q)=0  $; así: 
+\begin{gather*}
+  H(p,q) = T(p) + V(q) = \frac{p^2 }{2m } = \epsilon 
+\end{gather*}
+
+\textbf{a) } solucion de las ecuaciones de movimiento 
+\begin{gather*}
+  \dot q = \frac{\partial H  }{\partial p } \quad \rightarrow \quad \dot q = \frac{\partial q  }{\partial t } = \frac{\partial  }{\partial p } \left(\frac{p^2 }{2m }\right) = \frac{p }{ m } \quad \rightarrow \quad \displaystyle\int_{q = 0 }^{q } dq = \displaystyle\int_{t = 0 }^{t } \frac{p}{m } dt  \quad \rightarrow \quad q(t) - q(t_0 ) = \frac{p_0 }{m } 
+  \\
+  \dot p = - \frac{\partial  }{\partial q } ( 0 ) = 0 \quad \rightarrow \quad p(t) = p_0 = m \dot q_0 
+  \\
+  q(t) = q_0 + \dot q_0 t 
+\end{gather*}
+\begin{gather*}
+  \frac{p_0^2 }{2m } = \epsilon_0 \quad \rightarrow \quad p_0^2 = 2m \epsilon_0  
+\end{gather*}
+
+Volumen espacio de fase 
+\begin{align*}
+  \Lambda(\epsilon_0 ) &= (2 \left|p_0 \right|) (L) \\
+          &= 2 \left|p_0 \right|L = 2L \sqrt{2m \epsilon_0 } 
+\end{align*}
+
+
+\section{Ejemplo }
+\begin{gather*}
+  H(p, q) = \frac{p^2 }{2m } + \frac{1}{2} kq^2    
+\end{gather*}
+Donde $ V(q) = \frac{1}{2} k q^2  \quad \rightarrow \quad f(q) = - \frac{\partial V  }{\partial q } = - k q   $
+
+\hfill 
+
+\hfill 
+
+\textbf{a) } Slucion ec. de hamilton 
+\begin{gather*}
+  \dot q = \frac{\partial H  }{\partial p } \quad \rightarrow \quad \dot q = \frac{d q  }{d t } = \frac{p }{m } 
+  \\
+  \dot p = - \frac{\partial H  }{\partial  q } \quad \rightarrow \quad \dot p = \frac{d p  }{d t } = - k q \quad \rightarrow \quad q = -\frac{1 }{k } \dot p \\
+  \dot q = - \frac{1}{k} \ddot p \quad \rightarrow \quad - \frac{1}{k } \ddot p = \dot q = \frac{p }{m }
+\end{gather*}
+Entonces 
+\begin{gather*}
+  \ddot p + \frac{k}{m} = 0  \qquad \rightarrow \qquad \ddot p + \omega^2 p = 0 
+  \\
+  p(t) = B \sin{\omega t } 
+\end{gather*}
+Sustituyendo 
+\begin{gather*}
+  \frac{d q  }{d t } = \frac{p}{m } = \frac{B }{m } \sin{\omega t }
+  \\
+  dq = \frac{B }{m } \sin{\omega t } dt 
+  \\
+  \displaystyle\int_{q_0 }^{q(t) } dq = \frac{B }{m } \displaystyle\int_{t = 0 }^{t } \sin{\omega t } dt \\
+  q(t) = q_0 - \frac{B }{m\omega } \cos{\omega t } + \frac{B }{m \omega} 
+\end{gather*}
+
+
+\caja{blue}{Ejercicio 1 }{
+  
+}
+
+\end{document}
