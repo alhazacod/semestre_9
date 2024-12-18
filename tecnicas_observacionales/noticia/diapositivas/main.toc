@@ -1,0 +1,5 @@
+\beamer@sectionintoc {1}{Introducción}{2}{0}{1}
+\beamer@sectionintoc {2}{Problemas observados}{3}{0}{2}
+\beamer@sectionintoc {3}{Metodología}{4}{0}{3}
+\beamer@sectionintoc {4}{Resultados y discusiones}{5}{0}{4}
+\beamer@sectionintoc {5}{Implicaciones y futuro}{6}{0}{5}
